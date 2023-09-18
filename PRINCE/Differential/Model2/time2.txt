@@ -1,0 +1,84 @@
+Using license file /Users/muratilter/gurobi.lic
+Set parameter LogFile to value 2.log
+Academic license - for non-commercial use only
+Read LP format model from file Model2_diff_prince_2.lp
+Reading time = 0.01 seconds
+: 1027 rows, 544 columns, 7808 nonzeros
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (mac64)
+Optimize a model with 1027 rows, 544 columns and 7808 nonzeros
+Model fingerprint: 0x6d331e24
+Variable types: 0 continuous, 544 integer (544 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 64 rows and 128 columns
+Presolve time: 0.02s
+Presolved: 963 rows, 416 columns, 7616 nonzeros
+Variable types: 0 continuous, 416 integer (352 binary)
+
+Root relaxation: objective 3.818806e-01, 426 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.38188    0   17          -    0.38188      -     -    0s
+H    0     0                      16.0000000    0.38188  97.6%     -    0s
+H    0     0                      10.0000000    0.38188  96.2%     -    0s
+     0     0    0.42917    0   17   10.00000    0.42917  95.7%     -    0s
+H    0     0                       8.0000000    0.42917  94.6%     -    0s
+     0     0    0.44568    0   17    8.00000    0.44568  94.4%     -    0s
+     0     0    0.48606    0   46    8.00000    0.48606  93.9%     -    0s
+     0     0    0.99306    0   60    8.00000    0.99306  87.6%     -    0s
+     0     0    2.00000    0   58    8.00000    2.00000  75.0%     -    0s
+     0     0    2.00000    0   70    8.00000    2.00000  75.0%     -    0s
+     0     0    2.00000    0   44    8.00000    2.00000  75.0%     -    0s
+     0     0    2.00000    0   44    8.00000    2.00000  75.0%     -    0s
+     0     2    2.00000    0   44    8.00000    2.00000  75.0%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  Cover: 9
+  Implied bound: 49
+  Clique: 3
+  MIR: 5
+  StrongCG: 2
+  Zero half: 6
+  RLT: 2
+  Relax-and-lift: 4
+
+Explored 310 nodes (5923 simplex iterations) in 0.44 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 8 10 16 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+<gurobi.Var p0_0_3 (value 1.0)>
+<gurobi.Var p0_1_7 (value 1.0)>
+<gurobi.Var p0_1_10 (value 1.0)>
+<gurobi.Var p0_1_13 (value 1.0)>
+<gurobi.Var x0_12 (value 1.0)>
+<gurobi.Var x0_13 (value 1.0)>
+<gurobi.Var A0_3 (value 1.0)>
+<gurobi.Var y0_15 (value 1.0)>
+<gurobi.Var t0_7 (value 1.0)>
+<gurobi.Var d0_14 (value 1.0)>
+<gurobi.Var d0_15 (value 1.0)>
+<gurobi.Var t0_11 (value 1.0)>
+<gurobi.Var d0_22 (value 1.0)>
+<gurobi.Var d0_23 (value 1.0)>
+<gurobi.Var t0_15 (value 1.0)>
+<gurobi.Var d0_30 (value 1.0)>
+<gurobi.Var d0_31 (value 1.0)>
+<gurobi.Var x1_31 (value 1.0)>
+<gurobi.Var x1_43 (value 1.0)>
+<gurobi.Var x1_55 (value 1.0)>
+<gurobi.Var A1_7 (value 1.0)>
+<gurobi.Var A1_10 (value 1.0)>
+<gurobi.Var A1_13 (value 1.0)>
+<gurobi.Var y1_28 (value 1.0)>
+<gurobi.Var y1_40 (value 1.0)>
+<gurobi.Var y1_52 (value 1.0)>
+python 2.py  1.65s user 0.05s system 329% cpu 0.517 total

@@ -1,0 +1,135 @@
+Using license file /Users/muratilter/gurobi.lic
+Set parameter LogFile to value best-lin-std-klein2.log
+Academic license - for non-commercial use only
+Read LP format model from file std-best2.lp
+Reading time = 0.02 seconds
+: 4801 rows, 1168 columns, 20864 nonzeros
+Changed value of parameter TimeLimit to 172800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (mac64)
+Optimize a model with 4801 rows, 1168 columns and 20864 nonzeros
+Model fingerprint: 0x0c577346
+Variable types: 0 continuous, 1168 integer (1168 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Presolve time: 0.05s
+Presolved: 4801 rows, 1168 columns, 20864 nonzeros
+Variable types: 0 continuous, 1168 integer (1168 binary)
+Found heuristic solution: objective 128.0000000
+Found heuristic solution: objective 64.0000000
+
+Root relaxation: objective 3.866442e-01, 5375 iterations, 0.25 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.38664    0  392   64.00000    0.38664  99.4%     -    0s
+H    0     0                      18.0000000    0.38664  97.9%     -    0s
+     0     0    0.38664    0  418   18.00000    0.38664  97.9%     -    0s
+H    0     0                      12.0000000    0.38664  96.8%     -    1s
+     0     0    0.39423    0  775   12.00000    0.39423  96.7%     -    1s
+     0     0    0.39936    0  396   12.00000    0.39936  96.7%     -    1s
+     0     0    0.40706    0  395   12.00000    0.40706  96.6%     -    1s
+     0     0    0.42140    0  701   12.00000    0.42140  96.5%     -    1s
+     0     0    0.43372    0  895   12.00000    0.43372  96.4%     -    1s
+     0     0    0.43577    0  879   12.00000    0.43577  96.4%     -    1s
+     0     0    0.44962    0  703   12.00000    0.44962  96.3%     -    1s
+     0     0    0.45346    0  774   12.00000    0.45346  96.2%     -    1s
+     0     0    0.47079    0  801   12.00000    0.47079  96.1%     -    2s
+     0     0    0.47209    0  771   12.00000    0.47209  96.1%     -    2s
+     0     0    0.47917    0  803   12.00000    0.47917  96.0%     -    2s
+     0     0    0.47917    0  781   12.00000    0.47917  96.0%     -    2s
+     0     2    2.00000    0  781   12.00000    2.00000  83.3%     -    2s
+*  183   127              21      10.0000000    2.00000  80.0%   243    4s
+   321   207    4.42482    7  318   10.00000    2.17034  78.3%   217    5s
+  2141   729    4.39773   13  781   10.00000    4.00000  60.0%   148   10s
+  2364   839    4.25054   31  497   10.00000    4.00000  60.0%   168   15s
+  3434   878    4.33333   26  358   10.00000    4.00000  60.0%   163   20s
+  4556   951    5.00000   27  483   10.00000    4.00000  60.0%   161   25s
+  6134  1354 infeasible   31        10.00000    4.22423  57.8%   156   30s
+  7557  1580 infeasible   35        10.00000    4.40765  55.9%   152   35s
+  9375  1716     cutoff   33        10.00000    4.66202  53.4%   148   40s
+ 11276  1754    7.19268   30  284   10.00000    4.93763  50.6%   145   45s
+ 12860  1774     cutoff   35        10.00000    5.20102  48.0%   143   50s
+ 14823  1662    6.83721   32  330   10.00000    5.78954  42.1%   139   55s
+ 16776  1830    6.28092   28  578   10.00000    6.00000  40.0%   138   61s
+ 18918  1938    6.27665   33  220   10.00000    6.00000  40.0%   136   66s
+ 21229  2079    6.32537   29  494   10.00000    6.00000  40.0%   134   71s
+ 22138  2028 infeasible   29        10.00000    6.09116  39.1%   134  108s
+ 22558  1981 infeasible   26        10.00000    6.13399  38.7%   134  110s
+ 24211  1714 infeasible   28        10.00000    6.25365  37.5%   135  116s
+ 25949  1334     cutoff   31        10.00000    6.40000  36.0%   134  120s
+ 27707   819    8.00000   27  290   10.00000    6.61376  33.9%   134  125s
+ 29602    59     cutoff   27        10.00000    8.00000  20.0%   133  131s
+
+Cutting planes:
+  Cover: 56
+  Implied bound: 82
+  Clique: 6
+  MIR: 8
+  Flow cover: 8
+  Zero half: 1
+  RLT: 39
+
+Explored 30619 nodes (4090588 simplex iterations) in 132.32 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 5: 10 12 18 ... 128
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+<gurobi.Var p0_0_11 (value 1.0)>
+<gurobi.Var p0_1_1 (value 1.0)>
+<gurobi.Var p0_1_3 (value 1.0)>
+<gurobi.Var p0_1_5 (value 1.0)>
+<gurobi.Var p0_1_7 (value 1.0)>
+<gurobi.Var x0_47 (value 1.0)>
+<gurobi.Var A0_11 (value 1.0)>
+<gurobi.Var y0_44 (value 1.0)>
+<gurobi.Var y0_45 (value 1.0)>
+<gurobi.Var y0_46 (value 1.0)>
+<gurobi.Var d0_26 (value 1.0)>
+<gurobi.Var d0_31 (value 1.0)>
+<gurobi.Var d0_73 (value 1.0)>
+<gurobi.Var x1_4 (value 1.0)>
+<gurobi.Var d0_79 (value 1.0)>
+<gurobi.Var d0_88 (value 1.0)>
+<gurobi.Var d0_110 (value 1.0)>
+<gurobi.Var d0_175 (value 1.0)>
+<gurobi.Var x1_12 (value 1.0)>
+<gurobi.Var d0_184 (value 1.0)>
+<gurobi.Var x1_13 (value 1.0)>
+<gurobi.Var d0_190 (value 1.0)>
+<gurobi.Var d0_212 (value 1.0)>
+<gurobi.Var d0_230 (value 1.0)>
+<gurobi.Var d0_235 (value 1.0)>
+<gurobi.Var d0_277 (value 1.0)>
+<gurobi.Var x1_20 (value 1.0)>
+<gurobi.Var d0_286 (value 1.0)>
+<gurobi.Var x1_21 (value 1.0)>
+<gurobi.Var d0_295 (value 1.0)>
+<gurobi.Var x1_22 (value 1.0)>
+<gurobi.Var d0_301 (value 1.0)>
+<gurobi.Var d0_304 (value 1.0)>
+<gurobi.Var x1_23 (value 1.0)>
+<gurobi.Var d0_388 (value 1.0)>
+<gurobi.Var x1_29 (value 1.0)>
+<gurobi.Var d0_394 (value 1.0)>
+<gurobi.Var d0_406 (value 1.0)>
+<gurobi.Var x1_31 (value 1.0)>
+<gurobi.Var A1_1 (value 1.0)>
+<gurobi.Var A1_3 (value 1.0)>
+<gurobi.Var A1_5 (value 1.0)>
+<gurobi.Var A1_7 (value 1.0)>
+<gurobi.Var y1_5 (value 1.0)>
+<gurobi.Var y1_6 (value 1.0)>
+<gurobi.Var y1_7 (value 1.0)>
+<gurobi.Var y1_12 (value 1.0)>
+<gurobi.Var y1_13 (value 1.0)>
+<gurobi.Var y1_23 (value 1.0)>
+<gurobi.Var y1_29 (value 1.0)>
+<gurobi.Var y1_31 (value 1.0)>
+python3 std2.py  564.59s user 16.52s system 438% cpu 2:12.53 total

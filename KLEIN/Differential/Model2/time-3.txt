@@ -1,0 +1,218 @@
+Using license file /Users/muratilter/gurobi.lic
+Set parameter LogFile to value Model2_3.log
+Academic license - for non-commercial use only
+Read LP format model from file model2_diff_klein3.lp
+Reading time = 0.01 seconds
+: 1473 rows, 960 columns, 11968 nonzeros
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (mac64)
+Optimize a model with 1473 rows, 960 columns and 11968 nonzeros
+Model fingerprint: 0x66ada7c6
+Variable types: 0 continuous, 960 integer (960 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+01]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 0 rows and 304 columns
+Presolve time: 0.03s
+Presolved: 1473 rows, 656 columns, 11664 nonzeros
+Variable types: 0 continuous, 656 integer (528 binary)
+Found heuristic solution: objective 96.0000000
+
+Root relaxation: objective 4.292887e-01, 457 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.42929    0   21   96.00000    0.42929   100%     -    0s
+     0     0    0.43704    0   65   96.00000    0.43704   100%     -    0s
+H    0     0                      48.0000000    0.61767  98.7%     -    0s
+     0     0    0.61767    0   21   48.00000    0.61767  98.7%     -    0s
+     0     0    1.64925    0   78   48.00000    1.64925  96.6%     -    0s
+H    0     0                      28.0000000    1.64925  94.1%     -    0s
+     0     0    2.00000    0   26   28.00000    2.00000  92.9%     -    0s
+     0     0    2.00000    0   40   28.00000    2.00000  92.9%     -    0s
+     0     0    2.00000    0   70   28.00000    2.00000  92.9%     -    0s
+     0     0    2.00000    0   95   28.00000    2.00000  92.9%     -    0s
+     0     0    2.00000    0  138   28.00000    2.00000  92.9%     -    0s
+     0     0    2.00000    0  138   28.00000    2.00000  92.9%     -    0s
+     0     2    2.00000    0  138   28.00000    2.00000  92.9%     -    0s
+H  267   205                      24.0000000    2.00000  91.7%  26.8    0s
+H  551   330                      22.0000000    2.00000  90.9%  28.8    0s
+H 1106   644                      20.0000000    3.20296  84.0%  29.6    1s
+H 3455  1254                      18.0000000    3.20296  82.2%  27.2    3s
+  7549  3255   10.61857   29   62   18.00000    3.99944  77.8%  25.3    5s
+ 22696  9044   12.00000   33   30   18.00000    5.33556  70.4%  23.8   10s
+ 29663 11060    9.37093   42  138   18.00000    5.87883  67.3%  23.5   15s
+ 29812 11154    5.87883   32   23   18.00000    5.87883  67.3%  23.6   20s
+ 40918 12106   12.00000   47   36   18.00000    5.87883  67.3%  24.4   25s
+ 52742 11924    8.94288   42   39   18.00000    6.47336  64.0%  25.0   30s
+ 66782 12270     cutoff   51        18.00000    7.08745  60.6%  25.3   35s
+ 80544 15110     cutoff   46        18.00000    7.87654  56.2%  25.7   40s
+ 94153 18265   15.14014   47  100   18.00000    8.00000  55.6%  26.0   45s
+ 107309 21185   11.69137   54   41   18.00000    8.16471  54.6%  26.4   50s
+ 123333 24031     cutoff   60        18.00000    8.73913  51.4%  26.4   55s
+ 139469 26912   14.00000   43   51   18.00000    8.87479  50.7%  26.5   60s
+ 149201 28516   14.00000   49   50   18.00000    8.95632  50.2%  26.6   65s
+ 164003 30645   10.00000   57   36   18.00000    9.19483  48.9%  26.7   70s
+ 179508 32515   12.62480   44   75   18.00000    9.50000  47.2%  26.7   75s
+ 195139 34388     cutoff   58        18.00000    9.75580  45.8%  26.7   80s
+ 210434 36277   14.00000   57   11   18.00000   10.00000  44.4%  26.7   85s
+ 226092 38592   14.00000   47   42   18.00000   10.00000  44.4%  26.8   90s
+ 241477 41061   14.84938   44   29   18.00000   10.00000  44.4%  26.9   95s
+ 256607 43358   14.04009   46   70   18.00000   10.00000  44.4%  27.0  100s
+ 271722 44583   10.26242   43   91   18.00000   10.14446  43.6%  27.0  105s
+ 279144 45081   12.50152   44   95   18.00000   10.27692  42.9%  27.0  110s
+ 294619 46110 infeasible   53        18.00000   10.54381  41.4%  27.0  115s
+ 311382 47834   10.73654   42   48   18.00000   10.69381  40.6%  26.9  120s
+ 323321 49445 infeasible   48        18.00000   10.74964  40.3%  26.8  125s
+ 337678 50893   13.88742   52   95   18.00000   10.79744  40.0%  26.7  130s
+ 354406 52483   13.74143   59   59   18.00000   10.85704  39.7%  26.7  135s
+ 370462 53948   12.84938   43   54   18.00000   10.87992  39.6%  26.6  140s
+ 386810 54909   11.80008   39   50   18.00000   10.94288  39.2%  26.6  145s
+ 401844 55571   12.90686   58   36   18.00000   11.01978  38.8%  26.6  150s
+ 417213 55710   12.86633   53   36   18.00000   11.13300  38.2%  26.6  155s
+ 433468 56097   12.64101   54   90   18.00000   11.28745  37.3%  26.6  160s
+ 449917 56401   12.60645   44   83   18.00000   11.45080  36.4%  26.5  165s
+ 462942 56263   13.74128   49   53   18.00000   11.58710  35.6%  26.5  170s
+ 479480 55811   13.76871   47   62   18.00000   11.73594  34.8%  26.5  175s
+ 496624 54972 infeasible   53        18.00000   11.94385  33.6%  26.4  180s
+ 510252 55170   12.84658   41   35   18.00000   12.00000  33.3%  26.4  185s
+ 524859 55737 infeasible   52        18.00000   12.00000  33.3%  26.4  190s
+ 543116 56424     cutoff   55        18.00000   12.00000  33.3%  26.4  195s
+ 559649 56991 infeasible   57        18.00000   12.00000  33.3%  26.4  200s
+ 575218 57420 infeasible   42        18.00000   12.00000  33.3%  26.4  205s
+ 592825 57808   12.00000   45   40   18.00000   12.00000  33.3%  26.4  210s
+ 608157 58307   12.64317   60   68   18.00000   12.00000  33.3%  26.4  215s
+ 623652 58795 infeasible   49        18.00000   12.00000  33.3%  26.4  220s
+ 641239 58236 infeasible   56        18.00000   12.02916  33.2%  26.4  225s
+ 655213 56961     cutoff   62        18.00000   12.14672  32.5%  26.4  230s
+ 671662 55208   12.68999   35   88   18.00000   12.36749  31.3%  26.4  235s
+ 685294 53374 infeasible   49        18.00000   12.56638  30.2%  26.4  240s
+ 702099 51984   14.00000   51   27   18.00000   12.66667  29.6%  26.4  245s
+ 714651 50832 infeasible   43        18.00000   12.73960  29.2%  26.4  250s
+ 729982 48816   13.67215   41   87   18.00000   12.77372  29.0%  26.4  255s
+ 746069 46278   14.00000   51   52   18.00000   12.83817  28.7%  26.4  260s
+ 762914 43661     cutoff   46        18.00000   12.86054  28.6%  26.4  265s
+ 779584 41209   12.96090   46   60   18.00000   12.88037  28.4%  26.4  270s
+ 791859 38808   14.00000   50   17   18.00000   12.91982  28.2%  26.4  275s
+ 803831 36447   14.25497   59   30   18.00000   12.99063  27.8%  26.4  280s
+ 820970 32417     cutoff   57        18.00000   13.09943  27.2%  26.3  285s
+ 838282 27910 infeasible   42        18.00000   13.33333  25.9%  26.3  290s
+ 854466 22313 infeasible   65        18.00000   13.66667  24.1%  26.3  295s
+ 870525 16038   14.00000   62   32   18.00000   14.00000  22.2%  26.2  300s
+ 886600 10522 infeasible   52        18.00000   14.00000  22.2%  26.3  305s
+ 900701  4799     cutoff   58        18.00000   14.13267  21.5%  26.3  310s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 27
+  Implied bound: 6
+  Clique: 2
+  MIR: 15
+  Flow cover: 22
+  GUB cover: 6
+  Zero half: 13
+
+Explored 907056 nodes (23811641 simplex iterations) in 311.35 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 7: 18 20 22 ... 96
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.800000000000e+01, best bound 1.800000000000e+01, gap 0.0000%
+<gurobi.Var p0_0_4 (value 1.0)>
+<gurobi.Var p0_0_8 (value 1.0)>
+<gurobi.Var p0_0_10 (value 1.0)>
+<gurobi.Var p1_1_0 (value 1.0)>
+<gurobi.Var p0_1_2 (value 1.0)>
+<gurobi.Var p0_2_8 (value 1.0)>
+<gurobi.Var p0_2_10 (value 1.0)>
+<gurobi.Var p0_2_12 (value 1.0)>
+<gurobi.Var x0_16 (value 1.0)>
+<gurobi.Var x0_17 (value 1.0)>
+<gurobi.Var x0_18 (value 1.0)>
+<gurobi.Var x0_35 (value 1.0)>
+<gurobi.Var x0_40 (value 1.0)>
+<gurobi.Var x0_41 (value 1.0)>
+<gurobi.Var x0_42 (value 1.0)>
+<gurobi.Var A0_4 (value 1.0)>
+<gurobi.Var A0_8 (value 1.0)>
+<gurobi.Var A0_10 (value 1.0)>
+<gurobi.Var y0_18 (value 1.0)>
+<gurobi.Var y0_19 (value 1.0)>
+<gurobi.Var y0_34 (value 1.0)>
+<gurobi.Var y0_35 (value 1.0)>
+<gurobi.Var y0_42 (value 1.0)>
+<gurobi.Var y0_43 (value 1.0)>
+<gurobi.Var x1_1 (value 1.0)>
+<gurobi.Var d0_3 (value 1.0)>
+<gurobi.Var d0_4 (value 1.0)>
+<gurobi.Var x1_2 (value 1.0)>
+<gurobi.Var d0_6 (value 1.0)>
+<gurobi.Var d0_8 (value 1.0)>
+<gurobi.Var d0_9 (value 1.0)>
+<gurobi.Var d0_11 (value 1.0)>
+<gurobi.Var d0_12 (value 1.0)>
+<gurobi.Var x1_9 (value 1.0)>
+<gurobi.Var d0_30 (value 1.0)>
+<gurobi.Var d0_31 (value 1.0)>
+<gurobi.Var d0_33 (value 1.0)>
+<gurobi.Var d0_35 (value 1.0)>
+<gurobi.Var x1_11 (value 1.0)>
+<gurobi.Var d0_36 (value 1.0)>
+<gurobi.Var d0_38 (value 1.0)>
+<gurobi.Var d0_57 (value 1.0)>
+<gurobi.Var d0_58 (value 1.0)>
+<gurobi.Var d0_60 (value 1.0)>
+<gurobi.Var d0_62 (value 1.0)>
+<gurobi.Var d0_63 (value 1.0)>
+<gurobi.Var d0_65 (value 1.0)>
+<gurobi.Var d0_66 (value 1.0)>
+<gurobi.Var d0_84 (value 1.0)>
+<gurobi.Var d0_85 (value 1.0)>
+<gurobi.Var d0_87 (value 1.0)>
+<gurobi.Var d0_89 (value 1.0)>
+<gurobi.Var d0_90 (value 1.0)>
+<gurobi.Var d0_92 (value 1.0)>
+<gurobi.Var d0_93 (value 1.0)>
+<gurobi.Var A1_0 (value 1.0)>
+<gurobi.Var A1_2 (value 1.0)>
+<gurobi.Var y1_1 (value 1.0)>
+<gurobi.Var y1_10 (value 1.0)>
+<gurobi.Var x2_33 (value 1.0)>
+<gurobi.Var d1_111 (value 1.0)>
+<gurobi.Var d1_112 (value 1.0)>
+<gurobi.Var x2_34 (value 1.0)>
+<gurobi.Var d1_114 (value 1.0)>
+<gurobi.Var d1_115 (value 1.0)>
+<gurobi.Var x2_40 (value 1.0)>
+<gurobi.Var d1_135 (value 1.0)>
+<gurobi.Var d1_136 (value 1.0)>
+<gurobi.Var x2_41 (value 1.0)>
+<gurobi.Var d1_138 (value 1.0)>
+<gurobi.Var d1_139 (value 1.0)>
+<gurobi.Var x2_42 (value 1.0)>
+<gurobi.Var d1_141 (value 1.0)>
+<gurobi.Var d1_142 (value 1.0)>
+<gurobi.Var x2_48 (value 1.0)>
+<gurobi.Var d1_162 (value 1.0)>
+<gurobi.Var d1_163 (value 1.0)>
+<gurobi.Var x2_49 (value 1.0)>
+<gurobi.Var d1_165 (value 1.0)>
+<gurobi.Var d1_166 (value 1.0)>
+<gurobi.Var x2_50 (value 1.0)>
+<gurobi.Var d1_168 (value 1.0)>
+<gurobi.Var d1_169 (value 1.0)>
+<gurobi.Var d1_192 (value 1.0)>
+<gurobi.Var d1_193 (value 1.0)>
+<gurobi.Var A2_8 (value 1.0)>
+<gurobi.Var A2_10 (value 1.0)>
+<gurobi.Var A2_12 (value 1.0)>
+<gurobi.Var y2_33 (value 1.0)>
+<gurobi.Var y2_34 (value 1.0)>
+<gurobi.Var y2_42 (value 1.0)>
+<gurobi.Var y2_43 (value 1.0)>
+<gurobi.Var y2_50 (value 1.0)>
+<gurobi.Var y2_51 (value 1.0)>
+python3 model2-3.py  2322.11s user 55.57s system 763% cpu 5:11.45 total

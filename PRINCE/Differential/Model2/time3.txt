@@ -1,0 +1,113 @@
+Using license file /Users/muratilter/gurobi.lic
+Set parameter LogFile to value 3.log
+Academic license - for non-commercial use only
+Read LP format model from file Model2_diff_prince_3.lp
+Reading time = 0.01 seconds
+: 1604 rows, 912 columns, 11936 nonzeros
+Gurobi Optimizer version 9.0.2 build v9.0.2rc0 (mac64)
+Optimize a model with 1604 rows, 912 columns and 11936 nonzeros
+Model fingerprint: 0x4b2db155
+Variable types: 0 continuous, 912 integer (912 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+01]
+  Objective range  [2e+00, 4e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Presolve removed 128 rows and 256 columns
+Presolve time: 0.02s
+Presolved: 1476 rows, 656 columns, 11552 nonzeros
+Variable types: 0 continuous, 656 integer (528 binary)
+
+Root relaxation: objective 3.818806e-01, 493 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.38188    0   17          -    0.38188      -     -    0s
+     0     0    0.42917    0   17          -    0.42917      -     -    0s
+     0     0    0.44568    0   28          -    0.44568      -     -    0s
+     0     0    0.46169    0   90          -    0.46169      -     -    0s
+     0     0    0.46554    0   50          -    0.46554      -     -    0s
+     0     0    0.48271    0  152          -    0.48271      -     -    0s
+     0     0    0.48488    0  129          -    0.48488      -     -    0s
+     0     0    0.48987    0  142          -    0.48987      -     -    0s
+     0     0    0.49456    0  148          -    0.49456      -     -    0s
+     0     0    0.51877    0  141          -    0.51877      -     -    0s
+     0     0    0.52741    0  222          -    0.52741      -     -    0s
+H    0     0                      14.0000000    0.52741  96.2%     -    0s
+     0     0    0.56000    0  203   14.00000    0.56000  96.0%     -    0s
+     0     0    0.56139    0  193   14.00000    0.56139  96.0%     -    0s
+     0     0    1.28002    0  212   14.00000    1.28002  90.9%     -    0s
+     0     0    2.00000    0  213   14.00000    2.00000  85.7%     -    0s
+     0     0    2.00000    0  214   14.00000    2.00000  85.7%     -    0s
+     0     0    2.00000    0  214   14.00000    2.00000  85.7%     -    0s
+     0     2    2.00000    0  214   14.00000    2.00000  85.7%     -    0s
+  2909   845    8.00000    8   24   14.00000    6.00000  57.1%  81.1    5s
+  6757  1168    9.56724   34   40   14.00000    6.00000  57.1%  50.5   10s
+ 15802  2663    8.64626   27   40   14.00000    6.00000  57.1%  31.8   15s
+ 23213  3311    8.73745   30   65   14.00000    6.17065  55.9%  27.3   20s
+ 29813  3513   12.00000   27  214   14.00000    6.89091  50.8%  25.2   27s
+ 31492  3257 infeasible   38        14.00000    8.00000  42.9%  24.9   30s
+
+Cutting planes:
+  Implied bound: 12
+  Clique: 4
+  MIR: 10
+  Flow cover: 55
+  GUB cover: 1
+  Zero half: 35
+
+Explored 34443 nodes (836883 simplex iterations) in 31.96 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 1: 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.400000000000e+01, best bound 1.400000000000e+01, gap 0.0000%
+<gurobi.Var p0_0_12 (value 1.0)>
+<gurobi.Var p0_0_13 (value 1.0)>
+<gurobi.Var p0_0_15 (value 1.0)>
+<gurobi.Var p0_1_9 (value 1.0)>
+<gurobi.Var p0_2_2 (value 1.0)>
+<gurobi.Var p0_2_8 (value 1.0)>
+<gurobi.Var p0_2_15 (value 1.0)>
+<gurobi.Var x0_51 (value 1.0)>
+<gurobi.Var x0_52 (value 1.0)>
+<gurobi.Var x0_53 (value 1.0)>
+<gurobi.Var x0_63 (value 1.0)>
+<gurobi.Var A0_12 (value 1.0)>
+<gurobi.Var A0_13 (value 1.0)>
+<gurobi.Var A0_15 (value 1.0)>
+<gurobi.Var y0_51 (value 1.0)>
+<gurobi.Var y0_55 (value 1.0)>
+<gurobi.Var y0_63 (value 1.0)>
+<gurobi.Var d0_102 (value 1.0)>
+<gurobi.Var d0_103 (value 1.0)>
+<gurobi.Var t0_55 (value 1.0)>
+<gurobi.Var d0_110 (value 1.0)>
+<gurobi.Var d0_118 (value 1.0)>
+<gurobi.Var d0_119 (value 1.0)>
+<gurobi.Var d0_126 (value 1.0)>
+<gurobi.Var d0_127 (value 1.0)>
+<gurobi.Var x1_39 (value 1.0)>
+<gurobi.Var A1_9 (value 1.0)>
+<gurobi.Var y1_39 (value 1.0)>
+<gurobi.Var t1_35 (value 1.0)>
+<gurobi.Var d1_70 (value 1.0)>
+<gurobi.Var d1_71 (value 1.0)>
+<gurobi.Var t1_43 (value 1.0)>
+<gurobi.Var d1_86 (value 1.0)>
+<gurobi.Var d1_87 (value 1.0)>
+<gurobi.Var t1_47 (value 1.0)>
+<gurobi.Var d1_94 (value 1.0)>
+<gurobi.Var d1_95 (value 1.0)>
+<gurobi.Var x2_11 (value 1.0)>
+<gurobi.Var x2_35 (value 1.0)>
+<gurobi.Var x2_63 (value 1.0)>
+<gurobi.Var A2_2 (value 1.0)>
+<gurobi.Var A2_8 (value 1.0)>
+<gurobi.Var A2_15 (value 1.0)>
+<gurobi.Var y2_8 (value 1.0)>
+<gurobi.Var y2_35 (value 1.0)>
+<gurobi.Var y2_63 (value 1.0)>
+python 3.py  206.68s user 11.46s system 681% cpu 32.024 total
